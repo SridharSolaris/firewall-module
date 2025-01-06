@@ -1,0 +1,824 @@
+2025-01-06T09:09:38.996Z [INFO]: Server started on port 3000
+info: Server started on port 3000
+info: Server started on port 3000
+info: Server started on port 3000
+info: Server started on port 3000
+info: Request from IP: ::1
+error: Failed to connect to MongoDB: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string. {"stack":"MongooseError: The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.\n    at NativeConnection.createClient (C:\\Users\\SRIDHAR\\Desktop\\firewall-module\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\connection.js:225:11)\n    at NativeConnection.openUri (C:\\Users\\SRIDHAR\\Desktop\\firewall-module\\node_modules\\mongoose\\lib\\connection.js:1016:34)\n    at Mongoose.connect (C:\\Users\\SRIDHAR\\Desktop\\firewall-module\\node_modules\\mongoose\\lib\\mongoose.js:446:15)\n    at Object.<anonymous> (C:\\Users\\SRIDHAR\\Desktop\\firewall-module\\src\\index.js:18:4)\n    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n    at Module.load (node:internal/modules/cjs/loader:1208:32)\n    at Module._load (node:internal/modules/cjs/loader:1024:12)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)\n    at node:internal/main/run_main_module:28:49"}
+info: Server started on port 3000
+error: Failed to connect to MongoDB: MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+error: Failed to connect to MongoDB: MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+error: Failed to connect to MongoDB: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string. {"stack":"MongooseError: The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.\n    at NativeConnection.createClient (C:\\Users\\SRIDHAR\\Desktop\\firewall-module\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\connection.js:225:11)\n    at NativeConnection.openUri (C:\\Users\\SRIDHAR\\Desktop\\firewall-module\\node_modules\\mongoose\\lib\\connection.js:1016:34)\n    at Mongoose.connect (C:\\Users\\SRIDHAR\\Desktop\\firewall-module\\node_modules\\mongoose\\lib\\mongoose.js:446:15)\n    at Object.<anonymous> (C:\\Users\\SRIDHAR\\Desktop\\firewall-module\\src\\index.js:18:4)\n    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n    at Module.load (node:internal/modules/cjs/loader:1208:32)\n    at Module._load (node:internal/modules/cjs/loader:1024:12)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)\n    at node:internal/main/run_main_module:28:49"}
+info: Server started on port 3000
+error: Failed to connect to MongoDB: MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+info: Server started on port 3000
+error: Failed to connect to MongoDB: MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+error: Failed to connect to MongoDB: MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+info: Connected to MongoDB
+info: Server started on port 3000
+info: Connected to MongoDB
+info: Server started on port 3000
+info: Connected to MongoDB
+info: Server started on port 3000
+info: Connected to MongoDB
+info: Server started on port 3000
+info: Connected to MongoDB
+info: Server started on port 3000
+info: Request from IP: ::1
+error: Failed to block IP: Error blocking IP: 'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+
+info: Request from IP: ::1
+error: Failed to block IP: Error blocking IP: 'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+
+info: Request from IP: ::1
+error: Failed to block IP: Error blocking IP: 'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+
+info: Connected to MongoDB
+info: Server started on port 3000
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Firewall server running on port 3000
+info: Connected to MongoDB
+info: Firewall server running on port 3000
+info: Connected to MongoDB
+error: Failed to block IP: Error blocking IP: 'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+
+info: Firewall server is running on port 3000
+info: Firewall server is running on port 3000
+info: Request from IP: ::1
+info: Firewall server is running on port 3000
+info: Request from IP: ::1
+info: Firewall server is running on port 3000
+info: Request from IP: ::1
+info: Connected to MongoDB
+info: Firewall server is running on port 3000
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+error: Error forwarding request: Request failed with status code 304
+info: Request from IP: ::1
+info: Request from IP: ::1
+error: Error forwarding request: Request failed with status code 304
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Connected to MongoDB
+info: Firewall server is running on port 3000
+info: Request from IP: ::1
+error: Error forwarding request: Client network socket disconnected before secure TLS connection was established
+info: Request from IP: ::1
+error: Error forwarding request: Client network socket disconnected before secure TLS connection was established
+info: Request from IP: ::1
+info: Request from IP: ::1
+error: Error forwarding request: Client network socket disconnected before secure TLS connection was established
+error: Error forwarding request: Client network socket disconnected before secure TLS connection was established
+info: Request from IP: ::1
+error: Error forwarding request: Client network socket disconnected before secure TLS connection was established
+info: Request from IP: ::1
+info: Request from IP: ::1
+error: Error forwarding request: Client network socket disconnected before secure TLS connection was established
+error: Error forwarding request: Client network socket disconnected before secure TLS connection was established
+info: Connected to MongoDB
+info: Firewall server is running on port 3000
+info: Connected to MongoDB
+info: Firewall server is running on port 3000
+info: Connected to MongoDB
+info: Firewall server is running on port 3000
+info: Connected to MongoDB
+info: Firewall server is running on port 3000
+info: Connected to MongoDB
+info: Firewall server is running on port 3000
+info: Connected to MongoDB
+info: Firewall server is running on port 3000
+info: Connected to MongoDB
+info: Firewall server is running on port 3000
+info: Connected to MongoDB
+info: Firewall server is running on port 3000
+info: Connected to MongoDB
+info: Firewall server is running on port 3000
+info: Connected to MongoDB
+info: Firewall server is running on port 3000
+info: Connected to MongoDB
+info: Firewall server is running on port 3000
+info: Connected to MongoDB
+info: Firewall server is running on port 3000
+info: Connected to MongoDB
+info: Firewall server is running on port 3000
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Request from IP: ::1
+info: Connected to MongoDB
+info: Firewall server is running on port 3000
