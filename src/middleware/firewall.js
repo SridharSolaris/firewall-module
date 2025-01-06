@@ -31,6 +31,9 @@ class Firewall {
         url: targetUrl,
         headers: req.headers,
         data: req.body,
+        httpsAgent: new (require("https").Agent)({
+          rejectUnauthorized: false, // Ignore SSL verification for local development
+        }),
       });
 
       res.status(response.status).send(response.data);
