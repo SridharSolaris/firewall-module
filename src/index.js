@@ -8,6 +8,8 @@ const Firewall = require("./middleware/firewall");
 // Initialize the app
 const app = express();
 const port = process.env.PORT || 3000;
+const cors = require("cors");
+app.use(cors());
 
 // Middleware to parse JSON bodies
 app.use(bodyParser.json());
