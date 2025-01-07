@@ -1,12 +1,15 @@
-const winston = require("winston");
+const fs = require("fs");
+const path = require("path");
 
-const logger = winston.createLogger({
-  level: "info",
-  format: winston.format.simple(),
-  transports: [
-    new winston.transports.Console({ format: winston.format.simple() }),
-    new winston.transports.File({ filename: "firewall.log" }),
-  ],
-});
+const logFile = path.join(__dirname, "../../firewall.log");
 
-module.exports = logger;
+function log(message) {
+  const timestamp = new Date().toISOString();
+  const logMessage = `[${timestamp}] ${message}\n`;
+
+  fs.appendFile(logFile, logMessage, (err) => {
+    if (err) console.error("Error writing to log file:", err);
+  });
+}
+
+module.exports = log;

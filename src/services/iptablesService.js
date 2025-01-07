@@ -1,31 +1,23 @@
-const exec = require("child_process").exec;
+const { exec } = require("child_process");
 
-class IptablesService {
-  static blockIp(ip) {
-    return new Promise((resolve, reject) => {
-      const command = `sudo iptables -A INPUT -s ${ip} -j DROP`;
-      exec(command, (error, stdout, stderr) => {
-        if (error) {
-          reject(`Error blocking IP: ${stderr}`);
-        } else {
-          resolve(`IP ${ip} blocked successfully: ${stdout}`);
-        }
-      });
-    });
-  }
-
-  static unblockIp(ip) {
-    return new Promise((resolve, reject) => {
-      const command = `sudo iptables -D INPUT -s ${ip} -j DROP`;
-      exec(command, (error, stdout, stderr) => {
-        if (error) {
-          reject(`Error unblocking IP: ${stderr}`);
-        } else {
-          resolve(`IP ${ip} unblocked successfully: ${stdout}`);
-        }
-      });
-    });
-  }
+function blockIP(ip) {
+  exec(`iptables -A INPUT -s ${ip} -j DROP`, (err, stdout, stderr) => {
+    if (err) {
+      console.error("Error blocking IP:", stderr);
+    } else {
+      console.log(`IP ${ip} blocked successfully.`);
+    }
+  });
 }
 
-module.exports = IptablesService;
+function unblockIP(ip) {
+  exec(`iptables -D INPUT -s ${ip} -j DROP`, (err, stdout, stderr) => {
+    if (err) {
+      console.error("Error unblocking IP:", stderr);
+    } else {
+      console.log(`IP ${ip} unblocked successfully.`);
+    }
+  });
+}
+
+module.exports = { blockIP, unblockIP };

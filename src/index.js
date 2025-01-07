@@ -1,43 +1,43 @@
-require("dotenv").config();
 const express = require("express");
-const bodyParser = require("body-parser");
-const mongoose = require("mongoose");
-const logger = require("./utils/logger");
-const Firewall = require("./middleware/firewall");
+const firewallMiddleware = require("./middleware/firewall");
+const ruleManager = require("./services/ruleManager");
+require("dotenv").config();
 
-// Initialize the app
 const app = express();
-const port = process.env.PORT || 3000;
-const cors = require("cors");
-app.use(cors());
+const PORT = process.env.PORT || 3000;
 
-// Middleware to parse JSON bodies
-app.use(bodyParser.json());
+app.use(express.json());
+app.use(firewallMiddleware);
 
-// Connect to MongoDB
-mongoose
-  .connect(process.env.MONGODB_URI)
-  .then(() => {
-    logger.info("Connected to MongoDB");
-    console.log("Connected to MongoDB");
-  })
-  .catch((err) => {
-    logger.error("Failed to connect to MongoDB:", err);
-    console.error("Failed to connect to MongoDB:", err);
-  });
+// Add IP block rule
+app.post("/block", async (req, res) => {
+  const { ip } = req.body;
+  if (!ip) return res.status(400).send("IP address is required.");
 
-// Test endpoint
-app.get("/test", (req, res) => {
-  res.status(200).send("Request was successful");
+  try {
+    await ruleManager.addRule(ip);
+    res.status(200).send(`IP ${ip} blocked successfully.`);
+  } catch (error) {
+    console.error("Error blocking IP:", error);
+    res.status(500).send("Internal Server Error");
+  }
 });
 
-// Firewall Middleware to check and proxy requests
-app.use(Firewall.checkAndProxy);
+// Remove IP block rule
+app.post("/unblock", async (req, res) => {
+  const { ip } = req.body;
+  if (!ip) return res.status(400).send("IP address is required.");
 
-// Start the server only after MongoDB is connected
-mongoose.connection.once("open", () => {
-  app.listen(port, () => {
-    logger.info(`Firewall server is running on port ${port}`);
-    console.log(`Firewall server running on port ${port}`);
-  });
+  try {
+    await ruleManager.removeRule(ip);
+    res.status(200).send(`IP ${ip} unblocked successfully.`);
+  } catch (error) {
+    console.error("Error unblocking IP:", error);
+    res.status(500).send("Internal Server Error");
+  }
+});
+
+// Start server
+app.listen(PORT, () => {
+  console.log(`Firewall service running on port ${PORT}`);
 });

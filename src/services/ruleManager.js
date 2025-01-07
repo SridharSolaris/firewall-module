@@ -1,19 +1,22 @@
-const RuleStore = require("../db/ruleStore");
-const Firewall = require("../middleware/firewall");
+const connectDB = require("../db/ruleStore");
+const iptablesService = require("./iptablesService");
 
-class RuleManager {
-  static async manageBlockedIp(ip, action) {
-    switch (action) {
-      case "block":
-        await Firewall.blockIp(ip);
-        break;
-      case "unblock":
-        await Firewall.unblockIp(ip);
-        break;
-      default:
-        throw new Error("Invalid action");
-    }
-  }
+async function addRule(ip) {
+  const db = await connectDB();
+  await db.insertOne({ ip, blocked: true });
+  iptablesService.blockIP(ip);
 }
 
-module.exports = RuleManager;
+async function removeRule(ip) {
+  const db = await connectDB();
+  await db.deleteOne({ ip });
+  iptablesService.unblockIP(ip);
+}
+
+async function isIPBlocked(ip) {
+  const db = await connectDB();
+  const rule = await db.findOne({ ip, blocked: true });
+  return !!rule;
+}
+
+module.exports = { addRule, removeRule, isIPBlocked };

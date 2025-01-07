@@ -1,19 +1,17 @@
-const mongoose = require("mongoose");
-const FirewallRule = require("./firewallRule"); // Assuming you have a FirewallRule model
+const { MongoClient } = require("mongodb");
+require("dotenv").config();
 
-class RuleStore {
-  static async addRule(ip) {
-    const newRule = new FirewallRule({ ip });
-    return newRule.save();
-  }
+const client = new MongoClient(process.env.MONGO_URI);
 
-  static async getBlockedIps() {
-    return FirewallRule.find({});
-  }
-
-  static async removeRule(ip) {
-    return FirewallRule.deleteOne({ ip });
+async function connectDB() {
+  try {
+    await client.connect();
+    console.log("Connected to MongoDB");
+    return client.db(process.env.DB_NAME).collection("firewallRules");
+  } catch (error) {
+    console.error("Error connecting to MongoDB:", error);
+    process.exit(1);
   }
 }
 
-module.exports = RuleStore;
+module.exports = connectDB;
