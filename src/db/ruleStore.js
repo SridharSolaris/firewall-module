@@ -1,17 +1,12 @@
-const { MongoClient } = require("mongodb");
-require("dotenv").config();
+const mongoose = require("mongoose");
 
-const client = new MongoClient(process.env.MONGO_URI);
+// Rule schema for MongoDB
+const ruleSchema = new mongoose.Schema({
+  ip: { type: String, required: true },
+  action: { type: String, enum: ["block", "allow"], required: true },
+  createdAt: { type: Date, default: Date.now },
+});
 
-async function connectDB() {
-  try {
-    await client.connect();
-    console.log("Connected to MongoDB");
-    return client.db(process.env.DB_NAME).collection("firewallRules");
-  } catch (error) {
-    console.error("Error connecting to MongoDB:", error);
-    process.exit(1);
-  }
-}
+const Rule = mongoose.model("Rule", ruleSchema);
 
-module.exports = connectDB;
+module.exports = Rule;

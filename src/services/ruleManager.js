@@ -1,22 +1,17 @@
-const connectDB = require("../db/ruleStore");
+const Rule = require("../db/ruleStore");
 const iptablesService = require("./iptablesService");
 
-async function addRule(ip) {
-  const db = await connectDB();
-  await db.insertOne({ ip, blocked: true });
-  iptablesService.blockIP(ip);
-}
-
-async function removeRule(ip) {
-  const db = await connectDB();
-  await db.deleteOne({ ip });
-  iptablesService.unblockIP(ip);
-}
-
-async function isIPBlocked(ip) {
-  const db = await connectDB();
-  const rule = await db.findOne({ ip, blocked: true });
-  return !!rule;
-}
-
-module.exports = { addRule, removeRule, isIPBlocked };
+module.exports = {
+  addRule: async (ip, action) => {
+    const rule = new Rule({ ip, action });
+    await rule.save();
+    iptablesService.blockIP(ip);
+  },
+  removeRule: async (ip) => {
+    await Rule.deleteOne({ ip });
+    iptablesService.allowIP(ip);
+  },
+  getRules: async () => {
+    return Rule.find();
+  },
+};

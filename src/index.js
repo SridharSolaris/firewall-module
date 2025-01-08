@@ -1,50 +1,44 @@
 const express = require("express");
-const cors = require("cors"); // Import CORS
-const firewallMiddleware = require("./middleware/firewall");
+const mongoose = require("mongoose");
+const dotenv = require("dotenv");
 const ruleManager = require("./services/ruleManager");
-require("dotenv").config();
+const firewall = require("./middleware/firewall");
+
+dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3000;
-
-// Enable CORS with default options
-app.use(cors());
-
-// Allow JSON requests
 app.use(express.json());
+app.use(firewall);
+const cors = require("cors");
+const bodyParser = require("body-parser");
 
-// Middleware to check IPs
-app.use(firewallMiddleware);
+app.use(cors()); // Enable CORS
+app.use(bodyParser.json());
 
-// Add IP block rule
+// MongoDB Connection
+mongoose
+  .connect(process.env.MONGO_URI)
+  .then(() => console.log("Connected to MongoDB"))
+  .catch((err) => console.error("MongoDB connection error:", err));
+
+// Routes
 app.post("/block", async (req, res) => {
   const { ip } = req.body;
-  if (!ip) return res.status(400).send("IP address is required.");
-
-  try {
-    await ruleManager.addRule(ip);
-    res.status(200).send(`IP ${ip} blocked successfully.`);
-  } catch (error) {
-    console.error("Error blocking IP:", error);
-    res.status(500).send("Internal Server Error");
-  }
+  await ruleManager.addRule(ip, "block");
+  res.send({ message: `IP ${ip} blocked.` });
 });
 
-// Remove IP block rule
 app.post("/unblock", async (req, res) => {
   const { ip } = req.body;
-  if (!ip) return res.status(400).send("IP address is required.");
-
-  try {
-    await ruleManager.removeRule(ip);
-    res.status(200).send(`IP ${ip} unblocked successfully.`);
-  } catch (error) {
-    console.error("Error unblocking IP:", error);
-    res.status(500).send("Internal Server Error");
-  }
+  await ruleManager.removeRule(ip);
+  res.send({ message: `IP ${ip} unblocked.` });
 });
 
-// Start server
-app.listen(PORT, () => {
-  console.log(`Firewall service running on port ${PORT}`);
+app.get("/rules", async (req, res) => {
+  const rules = await ruleManager.getRules();
+  res.send(rules);
 });
+
+// Start Server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Firewall service running on port ${PORT}`));
