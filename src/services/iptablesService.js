@@ -1,35 +1,10 @@
-const { exec } = require("child_process");
-
+// No longer necessary for the Render.com environment, retained for local use
 function blockIP(ip) {
-  exec(`iptables -A INPUT -s ${ip} -j DROP`, (err, stdout, stderr) => {
-    if (err) {
-      console.error("Error blocking IP:", stderr);
-    } else {
-      console.log(`IP ${ip} blocked successfully.`);
-    }
-  });
+  console.log(`Blocking IP: ${ip}`);
 }
 
 function allowIP(ip) {
-  exec(`iptables -D INPUT -s ${ip} -j DROP`, (err, stdout, stderr) => {
-    if (err) {
-      console.error("Error unblocking IP:", stderr);
-    } else {
-      console.log(`IP ${ip} unblocked successfully.`);
-    }
-  });
+  console.log(`Allowing IP: ${ip}`);
 }
 
 module.exports = { blockIP, allowIP };
-
-// This module is a placeholder for managing actual IP tables on the server.
-// Replace this logic with real IPTables commands if needed.
-
-// module.exports = {
-//   blockIP: (ip) => {
-//     console.log(`Blocking IP: ${ip}`);
-//   },
-//   allowIP: (ip) => {
-//     console.log(`Allowing IP: ${ip}`);
-//   },
-// };

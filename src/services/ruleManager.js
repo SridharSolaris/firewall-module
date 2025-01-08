@@ -1,15 +1,14 @@
 const Rule = require("../db/ruleStore");
-const iptablesService = require("./iptablesService");
 
 module.exports = {
   addRule: async (ip, action) => {
     const rule = new Rule({ ip, action });
     await rule.save();
-    iptablesService.blockIP(ip);
+    console.log(`Rule added for IP ${ip} with action ${action}`);
   },
   removeRule: async (ip) => {
     await Rule.deleteOne({ ip });
-    iptablesService.allowIP(ip);
+    console.log(`Rule removed for IP ${ip}`);
   },
   getRules: async () => {
     return Rule.find();
