@@ -42,9 +42,13 @@ app.get("/rules", async (req, res) => {
 // New Route: Validate IP
 app.post("/validate", async (req, res) => {
   const { ip } = req.body; // The client IP is passed in the request body
+  if (!ip) {
+    return res.status(400).json({ error: "IP address is required." });
+  }
   try {
-    const rule = await ruleManager.getRules(ip); // Check if the IP is blocked
-    if (rule.some((r) => r.ip === ip && r.action === "block")) {
+    const rules = await ruleManager.getRules(); // Get all rules from the DB
+    const rule = rules.find((r) => r.ip === ip && r.action === "block");
+    if (rule) {
       return res.json({ blocked: true });
     }
     res.json({ blocked: false });
