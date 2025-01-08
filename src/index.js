@@ -8,12 +8,12 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
-app.use(firewall);
 const cors = require("cors");
 const bodyParser = require("body-parser");
 
 app.use(cors()); // Enable CORS
 app.use(bodyParser.json());
+app.use(firewall); // Firewall middleware
 
 // MongoDB Connection
 mongoose
@@ -37,6 +37,21 @@ app.post("/unblock", async (req, res) => {
 app.get("/rules", async (req, res) => {
   const rules = await ruleManager.getRules();
   res.send(rules);
+});
+
+// New Route: Validate IP
+app.post("/validate", async (req, res) => {
+  const { ip } = req.body; // The client IP is passed in the request body
+  try {
+    const rule = await ruleManager.getRules(ip); // Check if the IP is blocked
+    if (rule.some((r) => r.ip === ip && r.action === "block")) {
+      return res.json({ blocked: true });
+    }
+    res.json({ blocked: false });
+  } catch (error) {
+    console.error("Error validating IP:", error);
+    res.status(500).send({ error: "Internal Server Error" });
+  }
 });
 
 // Start Server
